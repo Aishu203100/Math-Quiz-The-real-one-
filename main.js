@@ -17,9 +17,9 @@ function addUser() {
     input_box = "<br>Answer:<input type='text' id='input_check_box'>";
     check_button = "<br><br><button class='btn btn-info' onclick='check()>Check</button>";
     row = question_number + input_box + check_button;
-    document.getElmentById("output").innerHTML = row;
-    document.getElmentById("number1").value = "";
-    document.getElmentById("number2").value = "";
+    document.getElementById("output").innerHTML = row;
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
   }
   question_turn = player1_name;
   answer_turn = player2_name;
@@ -42,10 +42,10 @@ function addUser() {
     if(question_turn == "player1")
     {
       question_turn = "player_2";
-      document.getELmentById("player_question").innerHTML = "Question turn -" + player2_name;
+      document.getElementById("player_question").innerHTML = "Question turn -" + player2_name;
     }
     else{
       question_turn = "player_1";
-      document.getELmentById("player_question").innerHTML = "Question turn -" + player1_name;
+      document.getElementById("player_question").innerHTML = "Question turn -" + player1_name;
     }
   }
