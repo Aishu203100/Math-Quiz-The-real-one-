@@ -21,8 +21,8 @@ function addUser() {
     document.getElementById("number1").value = "";
     document.getElementById("number2").value = "";
   }
-  question_turn = player1_name;
-  answer_turn = player2_name;
+  question_turn = player1;
+  answer_turn = player2;
   function check()
   {
     get_answer = document.getElmeentById("input_check_box").value;
